@@ -1,4 +1,4 @@
-Feature: Mailing plugin standart features BDD
+Feature: Lsdigest plugin standart features BDD
     Test base functionality of LiveStreet lsdigest plugin standart
 
 @mink:selenium2
