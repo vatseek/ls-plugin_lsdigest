@@ -10,7 +10,11 @@ class lsdigestFixtures extends AbstractFixtures
 {
     public function load()
     {
+        $sDateBefore = date('Y-m-d', time() - 60*60*24);
 
+        $oTopic = $this->getReference('topic-ipad');
+        $oTopic->setDateAdd($sDateBefore);
+        $this->oEngine->Topic_AddTopic($oTopic);
     }
 }
 

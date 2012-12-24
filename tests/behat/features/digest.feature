@@ -3,6 +3,7 @@ Feature: Lsdigest plugin standart features BDD
 
 @mink:selenium2
     Scenario: Lsdigest LiveStreet CMS
+        Given I load fixtures for plugin "lsdigest"
         Given I am on "/login"
         Then I want to login as "admin"
 
@@ -19,6 +20,4 @@ Feature: Lsdigest plugin standart features BDD
         Given I am on "/mailing/edit/1"
         Then I should see in element by css "talk_text" values:
           | value |
-          | Want more speeds and better protection for your data? The Sony MicroVault Mach flash USB 3.0 drive is what you need.  |
           | Another rumor for the iPad 3 has surfaced with some details given by Bloomberg,  |
-          | Toshiba is to add a new Android 4.0 ICS to the mass which is known as Toshiba AT330. |
