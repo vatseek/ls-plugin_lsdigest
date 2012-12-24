@@ -16,6 +16,7 @@ before_script:
   - echo "mailing" >> ./plugins/plugins.dat
 
   # change application working folders for write access
+  - mkdir -p ./templates/compiled/synio/
   - chmod -R 0777 ./tmp
   - chmod -R 0777 ./uploads
   - chmod -R 0777 ./templates/cache/
