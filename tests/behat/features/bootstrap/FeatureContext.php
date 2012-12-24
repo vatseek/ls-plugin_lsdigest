@@ -43,6 +43,8 @@ class FeatureContext extends MinkContext
 
         $response = shell_exec("{$this->sDirRoot}/plugins/lsdigest/include/cron/create-mailing-digest.php");
 
+        var_dump($response);
+
         if (!preg_match('/Mailing task #[0-9]+ created successfully/', $response)) {
             throw new ExpectationException('Messages not send (invalid script response)', $this->getSession());
         }
