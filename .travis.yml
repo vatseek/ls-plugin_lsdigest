@@ -11,7 +11,7 @@ before_script:
   - cp /tmp/ls/.htaccess ./
   - mkdir -p plugins/lsdigest && cp -a /tmp/plugins/lsdigest/* plugins/lsdigest
   - echo "lsdigest" > ./plugins/plugins.dat
-  - git clone git@github.com:stfalcon-studio/ls-plugin_mailing.git ./plugins/mailing
+  - git clone git://github.com/stfalcon-studio/ls-plugin_mailing.git ./plugins/mailing
   - echo "mailing" >> ./plugins/plugins.dat
 
   # change application working folders for write access
